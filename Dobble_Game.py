@@ -1,21 +1,10 @@
 import random
-
-# basic
-def dg():
-
-    n=["a","c","g","h","k"]
-    g=["a","x","y","z","q"]
-    x= str(input(":"))
-    if x in n and g:
-        print("lu")
-    else:
-        print("pooo")
-
-#  Dobblr_game
+ 
+#  Dobble_game
 
 import string
 sympols=[]
-# here we for an lis from a-z and A-Z
+# here we form an list from a-z and A-Z
 sympols= list(string.ascii_letters)
 print ("from a-z and A-Z", sympols)
 
@@ -28,7 +17,7 @@ print ("card2: ",card2)
 
 
 # here we create the 2 position
-# because in the 2 cards 1 position want to same
+# because in the 2 cards, there will be 1 position want to be same
 pos1=random.randint(0,4)
 pos2=random.randint(0,4)
 
@@ -39,7 +28,8 @@ print("pos2:",pos2)
 # we create the "same_sympols" to save that same letter
 
 same_sympols= random.choice(sympols)
-sympols.remove(same_sympols)
+sympols.remove(same_sympols) # this line says that the pick up letter should be removed from the "symbols"
+#so that we not get same values in that list
 print("same_sympols: ",same_sympols)
 
 # checking if the pos1 is equal to pos2 because in some existence only it may same
