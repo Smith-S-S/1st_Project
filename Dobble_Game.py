@@ -48,8 +48,8 @@ else:
 
 # if we not use this means the following "while" condition is comes to neglate,
     # if pos1=1 pos2=0
-    # that we say that if i== pos neglate, so  pos1=1 pos2=0  got value
-    # But  pos1=0 and pos2=1 n0 get value
+    # " if (i!= pos1 and i!= pos2) "
+    #so in the list contain only 3 values are occupied others be 0 
     card1[pos2] = random.choice(sympols)
     sympols.remove(card1[pos2])
     card2[pos1] = random.choice(sympols)
@@ -58,7 +58,7 @@ else:
     print(card2[pos1])
 
 
-# ya here in
+# ya here we add values to the list
 i=0
 while (i<5):
     if (i!= pos1 and i!= pos2):
