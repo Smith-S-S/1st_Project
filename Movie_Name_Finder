@@ -1,0 +1,10 @@
+import random
+
+l=["smith ss","sushmith ss","raj t","santhose 6","prithvi raj"]
+
+player_1= input("Please Type your name player 1: ")
+player_2= input("Please Type your name player 2: ")
+
+turns=0
+pos1=0
+pos2=0
