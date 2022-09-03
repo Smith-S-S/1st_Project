@@ -8,3 +8,12 @@ player_2= input("Please Type your name player 2: ")
 turns=0
 pos1=0
 pos2=0
+
+can_we= True # this comment wether the player want to paly or not
+while can_we:
+    if turns %2==0:
+        print (player_1," its your turn")
+        rd_choice= random.choice(l)
+        lines = stars(rd_choice)
+        print (lines)
+        modified_lines=lines
